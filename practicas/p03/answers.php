@@ -79,6 +79,19 @@
     
     echo "</p>";
 	echo "<hr />";
+
+     
+    echo "<h5>parte 4:</h5>";
+    echo "<p>";
+    echo "impresion de globals (a,b,c,z,(pero z no sale aunque ponga indice))","<br />";
+    echo $GLOBALS['a'],"<br />";#se puede imprimir simplemente cambiando el contenido de las comillas simples
+    echo $GLOBALS['b'],"<br />";
+    echo $GLOBALS['c'],"<br />";
+    echo $GLOBALS['z[0]'],"<br />";
+    
+    echo "</p>";
+
+    echo "<hr />";
 ?>
 
 </body>
