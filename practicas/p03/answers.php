@@ -52,6 +52,33 @@
     echo "</p>";
 
     echo "<hr />";
+
+      echo "<h5>parte 3:</h5>";
+    $a = "PHP5";
+    echo "<p>";
+    echo "a: ",$a," ",gettype($a);#a: PHP5 string
+	echo "<br />"; 
+    $z[] = &$a;
+    echo "z: ",$z[0]," ",gettype($z);#z: Array array#!!!!!!!!!!!
+	echo "<br />";
+    $b = "5a version de PHP";
+    echo "b: ",$b," ",gettype($b);#b: 5a version de PHP string
+	echo "<br />";
+    $c = $b*10;
+    echo "c: ",$c," tipo: ",gettype($c);#c: 50 integer
+	echo "<br />";
+    $a .= $b;
+    echo "a: ",$a," tipo: ",gettype($a);#a: PHP55a version de PHP string
+	echo "<br />";
+    $b *= $c;
+    echo "b: ",$b," tipo: ",gettype($b);#b: 250 integer
+	echo "<br />";
+    $z[0] = "MySQL";
+    echo "z: ",$z[0]," tipo: ",gettype($z);#z: Array array
+    echo "<br />";
+    
+    echo "</p>";
+	echo "<hr />";
 ?>
 
 </body>
