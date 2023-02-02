@@ -92,6 +92,24 @@
     echo "</p>";
 
     echo "<hr />";
+
+     echo "<h5>parte 5:</h5>";
+    echo "<p>";
+    $a = "7 personas";
+    $b = (integer) $a;
+    $a = "9E3";
+    $c = (double) $a;
+    
+
+    echo "valor: ",$a," tipo: ",gettype($a),"<br />";
+    echo "valor: ",$b," tipo: ",gettype($b),"<br />";
+    echo "valor: ",$c," tipo: ",gettype($c),"<br />";
+    #a:9E3 tipo: string
+    #b:7 tipo: integer
+    #c:9000 tipo: double
+    
+    echo "</p>";
+    echo "<hr />";
 ?>
 
 </body>
