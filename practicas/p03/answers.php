@@ -144,7 +144,20 @@
     
     echo "</p>";
     echo "<hr />";
+
+
+     echo "<h5>parte 7:</h5>";
+    echo "<p>";  
+    echo "Para version de apache y PHP:","<br />";
+    echo $_SERVER['SERVER_SOFTWARE'],"<br />";
+    echo "nombre del sistema operativo (server)","<br />";
+    echo $_SERVER['HTTP_USER_AGENT'],"<br />";
+    echo "idioma del navegador","<br />";
+    echo $_SERVER['HTTP_ACCEPT_LANGUAGE'],"<br />";
+    echo "</p>";
 ?>
+
+
 
 </body>
 
