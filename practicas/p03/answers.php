@@ -110,6 +110,40 @@
     
     echo "</p>";
     echo "<hr />";
+
+     echo "<h5>parte 6:</h5>";
+    echo "<p>";
+    echo "visualizacion usando var_dump: <br />";
+
+    $a = "0";#NO BOOLEANO
+    $b = "TRUE"; #NO BOOLEANO
+    $c = FALSE;#BOOLEANO
+    $d = ($a OR $b);#BOOLEANO
+    $e = ($a AND $c);#BOLEANO
+    $f = ($a XOR $b);#BOOLEANO
+    
+    
+
+    var_dump($a);
+    echo "<br />";
+    var_dump($b);
+    echo "<br />";
+    var_dump($c);
+    echo "<br />";
+    var_dump($d);
+    echo "<br />";
+    var_dump($e);
+    echo "<br />";
+    var_dump($f);
+    echo "<br />";
+    /*
+    echo "se puede ver o transformar el valor booleano de cualquier variable con boolvar usando echo de la siguiente forma:","<br />";
+    echo "echo \"texto opcional\",(boolval(\$var)?'true' : 'false');";
+    */
+    
+    
+    echo "</p>";
+    echo "<hr />";
 ?>
 
 </body>
