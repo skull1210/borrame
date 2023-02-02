@@ -19,7 +19,41 @@
     #$house*5="e"; #invalido por tener la estructura de una operacion, se quedaria como house
 
     echo "<hr />";
+      echo "<h5>parte 2:</h5>";
+    $a = "ManejadorSQL";
+    $b = 'MySQL';
+    $c = &$a;
+    echo "<h5>primera asignacion:</h5>";
+    echo "<p>";
+    echo $a,"<br />";
+    echo $b,"<br />";
+    echo $c,"<br />";
+    echo "</p>";
+
+    $a = "PHP server";
+    $b = &$a;
+
+    echo "<h5>segunda asignacion:</h5>";
+    echo "<p>";
+    echo $a,"<br />";
+    echo $b,"<br />";
+    echo $c,"<br />";
+    echo "<br  />";
+    echo "esto ocurre por la siguiente secuencia:","<br />";
+    echo "a = 'ManejadorSQL","<br />";
+    echo "b = 'MySQL'","<br />";
+    echo "c = a","<br />";
+
+    echo "despues, ocurre una asignacion:","<br  />";
+    echo "<br  />";
+    echo "a='PHP server'","<br  />";
+    echo "b= a (PHP server)","<br  />";
+    echo "c=a (PHP server)","<br  />";
+    echo "</p>";
+
+    echo "<hr />";
 ?>
+
 </body>
 
 </html>
