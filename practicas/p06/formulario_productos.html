@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Formulario productos v2.0</title>
+</head>
+<body>
+    <h2>Insercion de datos de productos</h2>
+    <hr>
+    <form action="./set_producto_v2.php" method="post">
+        <fieldset>
+            <legend>Datos del producto</legend>
+            <label for="nom">nombre: </label><input type="text" name="nom" id="nom"><br/>
+            <label for="marc">marca: </label><input type="text" name="marc" id="marc"><br/>
+            <label for="mod">modelo: </label><input type="text" name="mod" id="mod"><br/>
+            <label for="pre">precio: </label><input type="text" name="pre" id="pre"><br/>
+            <label for="det">detalles: </label><input type="text" name="det" id="det"><br/>
+            <label for="uni">unidades: </label><input type="text" name="uni" id="uni"><br/>
+            <label for="im">ruta relativa a la imagen: </label><input type="text" name="im" id="im">
+        </fieldset>
+        <p>
+            <input type="checkbox" name="conf" id="conf" required="required">
+            <label for="conf">Declaro ante el codigo del comite de etica y del comite O5 que los datos aqui expresados son verdaderos y se pueden comprobar sin objecion alguna bajo lo estipulado en [REDACTADO]</label><br>
+            <input type="submit" value="Ingresar datos"/>
+            <input type="reset" value="Reiniciar"/>
+        </p>
+    </form>
+</body>
+</html>
